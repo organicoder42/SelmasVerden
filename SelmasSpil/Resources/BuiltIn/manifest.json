@@ -1,0 +1,204 @@
+{
+  "assets": [
+    {
+      "anchors": {
+        "bottom": [
+          0.5,
+          0.7
+        ],
+        "dress": [
+          0.5,
+          0.55
+        ],
+        "ears": [
+          0.5,
+          0.17
+        ],
+        "eyes": [
+          0.5,
+          0.165
+        ],
+        "glasses": [
+          0.5,
+          0.165
+        ],
+        "hair": [
+          0.5,
+          0.16
+        ],
+        "handLeft": [
+          0.08,
+          0.56
+        ],
+        "handRight": [
+          0.92,
+          0.57
+        ],
+        "hat": [
+          0.5,
+          0.02
+        ],
+        "mouth": [
+          0.5,
+          0.225
+        ],
+        "nose": [
+          0.5,
+          0.19
+        ],
+        "shoes": [
+          0.5,
+          0.955
+        ],
+        "socks": [
+          0.5,
+          0.93
+        ],
+        "top": [
+          0.5,
+          0.42
+        ]
+      },
+      "artist": "Selma",
+      "category": "body",
+      "createdAt": "2026-10-13T15:50:36Z",
+      "id": "AD14BC93-DD7A-4A70-9973-235E7C967510",
+      "imageFile": "body-AD14BC93.png",
+      "name": "Pige",
+      "paintable": true,
+      "pixelSize": [
+        401.46459412780655,
+        1024.0
+      ],
+      "source": "bundled",
+      "tags": [
+        "Selmas første figur: tegnet med tøj på, bruges som grundfigur",
+        "foto:ark1.jpg"
+      ]
+    },
+    {
+      "artist": "Selma",
+      "category": "mouth",
+      "createdAt": "2026-10-13T15:50:36Z",
+      "id": "E5B7ADD6-16AF-464B-82CE-202D36D02605",
+      "imageFile": "mouth-E5B7ADD6.png",
+      "name": "Mund",
+      "paintable": true,
+      "pixelSize": [
+        55,
+        25
+      ],
+      "source": "bundled",
+      "tags": [
+        "foto:ark1.jpg"
+      ]
+    },
+    {
+      "artist": "Selma",
+      "category": "handRight",
+      "createdAt": "2026-10-13T15:50:36Z",
+      "id": "191E8353-3E93-4875-B1C1-2E52A2DC462D",
+      "imageFile": "handRight-191E8353.png",
+      "name": "Højre hånd",
+      "paintable": true,
+      "pixelSize": [
+        82,
+        75
+      ],
+      "source": "bundled",
+      "tags": [
+        "foto:ark1.jpg"
+      ]
+    },
+    {
+      "artist": "Selma",
+      "category": "handLeft",
+      "createdAt": "2026-10-13T15:50:36Z",
+      "id": "31B54077-40AF-430D-A52C-BE5B4FBF2A1B",
+      "imageFile": "handLeft-31B54077.png",
+      "name": "Venstre hånd",
+      "paintable": true,
+      "pixelSize": [
+        80,
+        101
+      ],
+      "source": "bundled",
+      "tags": [
+        "foto:ark1.jpg"
+      ]
+    },
+    {
+      "artist": "Selma",
+      "category": "pet",
+      "createdAt": "2026-10-13T15:50:36Z",
+      "defaultHeight": 0.2,
+      "id": "62A53D0F-29FC-4AA3-B924-17A6B56BE668",
+      "imageFile": "pet-62A53D0F.png",
+      "name": "Kanin",
+      "paintable": true,
+      "pixelSize": [
+        151,
+        230
+      ],
+      "source": "bundled",
+      "tags": [
+        "foto:ark1.jpg"
+      ]
+    },
+    {
+      "artist": "Selma",
+      "category": "pet",
+      "createdAt": "2026-10-13T15:50:36Z",
+      "defaultHeight": 0.2,
+      "id": "A19F5F9B-BD09-4DF1-8AE6-C121F2A1B466",
+      "imageFile": "pet-A19F5F9B.png",
+      "name": "Kylling",
+      "paintable": true,
+      "pixelSize": [
+        148,
+        216
+      ],
+      "source": "bundled",
+      "tags": [
+        "foto:ark1.jpg"
+      ]
+    },
+    {
+      "artist": "Selma",
+      "category": "pet",
+      "createdAt": "2026-10-13T15:50:36Z",
+      "defaultHeight": 0.2,
+      "id": "871F306F-5EE8-47E6-8DB1-0FDA76430E25",
+      "imageFile": "pet-871F306F.png",
+      "name": "Kat",
+      "paintable": true,
+      "pixelSize": [
+        181,
+        225
+      ],
+      "source": "bundled",
+      "tags": [
+        "foto:ark1.jpg"
+      ]
+    },
+    {
+      "artist": "Selma",
+      "category": "pet",
+      "createdAt": "2026-10-13T15:50:36Z",
+      "defaultHeight": 0.2,
+      "id": "3158C34F-3A8A-4F02-BF50-D3BF4104AF4C",
+      "imageFile": "pet-3158C34F.png",
+      "name": "Kanin med lange ører",
+      "paintable": true,
+      "pixelSize": [
+        182,
+        300
+      ],
+      "source": "bundled",
+      "tags": [
+        "foto:ark1.jpg"
+      ]
+    }
+  ],
+  "version": 1
+}

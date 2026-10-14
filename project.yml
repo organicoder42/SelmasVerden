@@ -1,0 +1,81 @@
+name: SelmasSpil
+options:
+  bundleIdPrefix: dk.saabynoer
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
+targets:
+  SelmasSpil:
+    type: application
+    platform: iOS
+    sources:
+      - path: SelmasSpil
+        excludes:
+          - "Resources/BuiltIn/**"
+          - "Resources/Style/**"
+      # Blå mappe-referencer: indholdet kopieres med mappestruktur og kan udskiftes uden at røre projektet.
+      - path: SelmasSpil/Resources/BuiltIn
+        type: folder
+      - path: SelmasSpil/Resources/Style
+        type: folder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dk.saabynoer.selmasspil
+        PRODUCT_NAME: SelmasSpil   # modulnavn uden mellemrum; det synlige navn er CFBundleDisplayName
+        TARGETED_DEVICE_FAMILY: "2"
+        SUPPORTS_MACCATALYST: NO
+        CODE_SIGN_STYLE: Automatic
+    # Info.plist genereres af xcodegen ud fra disse nøgler. INFOPLIST_KEY_*-build-settings virker IKKE her,
+    # fordi vi har en egen Info.plist - så alt plist-indhold skal stå i denne liste.
+    info:
+      path: SelmasSpil/Info.plist
+      properties:
+        CFBundleDevelopmentRegion: da
+        CFBundleDisplayName: "Selmas Spil"
+        CFBundleLocalizations: [da]
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UIRequiresFullScreen: YES
+        UIStatusBarHidden: YES
+        # Uden denne ignoreres UIStatusBarHidden (SwiftUI styrer ellers statuslinjen pr. view controller).
+        UIViewControllerBasedStatusBarAppearance: NO
+        UIApplicationSupportsIndirectInputEvents: YES
+        NSCameraUsageDescription: "Selmas Spil bruger kameraet til at tage billeder af tegninger, så de kan komme ind i spillet."
+        NSPhotoLibraryUsageDescription: "Selmas Spil bruger dine billeder til at hente fotos af tegninger ind i spillet."
+        ITSAppUsesNonExemptEncryption: NO
+        UIFileSharingEnabled: YES
+        LSSupportsOpeningDocumentsInPlace: YES
+  SelmasSpilTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: SelmasSpilTests
+    dependencies:
+      - target: SelmasSpil
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dk.saabynoer.selmasspil.tests
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  SelmasSpil:
+    build:
+      targets:
+        SelmasSpil: all
+        SelmasSpilTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets: [SelmasSpilTests]

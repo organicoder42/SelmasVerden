@@ -1,0 +1,19 @@
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+build/
+.DS_Store
+*.swp
+# Python
+Tools/ingest/.venv/
+__pycache__/
+*.pyc
+# Hemmeligheder - API-nøgler må aldrig i git
+.env
+Tools/ingest/.env
+# Rå fotos af tegninger (store filer); de behandlede assets i Resources/BuiltIn er med
+Tegninger/indbakke/*
+!Tegninger/indbakke/README.md
+Tegninger/behandlet/*
+!Tegninger/behandlet/README.md
